@@ -1,0 +1,96 @@
+body {
+	background-color: #000000;
+	overflow: hidden;
+}
+
+.container {
+	display:flex;
+	width: 400px;
+	height:500px;
+	flex-wrap:wrap;
+	flex-direction: column;
+	position: absolute;
+	top: 30%;
+	left: 43%;
+	margin: -70px 0 0 -170px;
+	opacity: 0px;
+}
+
+.container div {
+	width: calc((100% / 4) - 2rem); 
+	height:80px;
+	background-color:#666633;
+	margin:8px;
+	padding:8px;
+	font-size:18px;	
+	border-radius: 5px;
+
+}
+
+.container div:hover {
+	border: 1px solid #55552b;
+	background-color: #bbbb77;
+	margin: 8px;
+	padding: 7px;
+	box-shadow: 0 0 10px gold;
+}
+
+.localize {
+	margin-left: -10%;
+	opacity: 1;
+	visibility:visible;
+}
+
+img {
+	width: 84px;
+    height: 73px;
+    position: relative;
+    top: 60%;
+    left: 238%;
+    margin: -72px 0 0 -170px;
+}
+
+.button {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	border-radius: 5px;
+	background-color: #55552b;
+	cursor: pointer;
+	color: #FFFFFF;
+	position: relative;
+	width: 75px;
+	top: 90px;
+	left: 65%;
+	margin: -72px 0 0 -170px;
+}
+
+.button:hover {
+	background-color: #99994d;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.button.active {
+	background-color: #222211;
+	color: white;
+	border: 1px solid #cccc99;
+	font-weight: bold;
+}
+
+.search {
+	animation-duration: 2s;
+	animation-name: animate;
+}
+
+
+@keyframes animate {
+	from {
+		margin-left: 12%;
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}		
